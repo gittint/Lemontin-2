@@ -1,0 +1,448 @@
+*{
+    box-sizing: inherit;
+}
+
+:root{
+    --background-color:#ffffff;
+    --text-color:#333333;
+    --bg-hover: #f1f1f1;
+    --red-color: #e8555c;
+}
+
+html{
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior:smooth ; /*Hành vi khi cuộn trang web*/
+}
+
+.grid{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.grid__row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.grid__column-3{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 385px;
+}
+
+@keyframes Down{
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes Up{
+    from{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes FadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* base menu nav */
+.menu-base{
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-base--list{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 0;
+    flex-wrap: wrap;
+    max-width: 800px;
+}
+
+.menu-base--item{
+    width: 176px;
+    height: 146px;
+    border: 1px solid #f2f1f1;
+    text-align: center;
+    margin: 2px 30px;
+    background-color: var(--background-color);
+}
+
+.menu-base--item--active{
+    box-shadow: 0 1px 1rem rgb(0 0 0 / 20%);
+}
+
+.menu-base--item:hover{
+    box-shadow: 0 1px 1rem rgb(0 0 0 / 20%);
+}
+
+.menu-base--link{
+    display: block;
+    text-decoration: none;
+}
+
+.menu-base--icon{
+    padding-top: 16px;
+    font-size: 40px;
+    color: #1b506b;
+}
+
+.menu-base--label{
+    padding: 10px 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+/* base button  */
+.button-base{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    background-color: #e8555c;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button-base:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* base menu buy */
+.base-menu-buy__list{
+    list-style: none;
+    padding-left: 0;
+}
+
+.base-menu-buy__item{
+    margin: 0 auto 60px;
+    width: 1000px;
+    min-height: 300px;
+    background-color: #f1f4f5;
+    display: flex;
+}
+
+.base-menu-buy__item:nth-child(2n){
+    flex-direction: row-reverse;   /*Đảo ngược vị trí của các phần tử ở thứ tự chẵn*/
+}
+
+.base-menu-buy__item--img-box{
+    margin: 0 60px;
+    height: 300px;
+    width: 40%;
+}
+
+.base-menu-buy__item--img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.base-menu-buy__item--content-box{
+    padding: 40px 0 20px 0;
+    width: 30%;
+    flex-wrap: wrap;
+}
+
+.base-menu-buy__item--link{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.base-menu-buy__item--link:hover{
+    text-decoration: underline;
+}
+
+.base-menu-buy__item--desc{
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+.base-menu-buy__item--desc-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+.base-menu-buy__item--desc-item{
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.base-menu-buy__item--price{
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+    font-weight: 600;
+    padding: 5px 0;
+}
+
+/* base sub menu  */
+
+.sub-menu-base{
+    display: flex;
+    justify-content: center;
+}
+
+.sub-menu-base--list{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+}
+
+.sub-menu-base--item{
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    color: var(--text-color);
+    padding: 5px 10px;
+    position: relative;
+}
+
+.sub-menu-base--item::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 10%;
+    height: 46%;
+    top: 24%;
+    left: 100%;
+    border-left: 2px solid var(--text-color);
+}
+
+.sub-menu-base--item:last-child.sub-menu-base--item::after{
+    display: none;
+} 
+
+/* base menu FAD */
+
+.fad-menu-base{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.fad-menu-base--list{
+    padding-left: 0;
+    list-style: none;
+    width: 85%;
+}
+
+.fad-menu-base--item{
+    padding-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fad-menu-base--item:first-child{
+    margin-top: 0px;
+}
+
+.fad-menu-base--item:nth-child(2n){
+    flex-direction: row-reverse;   /*Đảo ngược vị trí của các phần tử ở thứ tự chẵn*/
+}
+
+.fad-menu-base--img-box{
+    text-align: center;
+    width: 40%;
+}
+
+.fad-menu-base--img-label{
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.fad-menu-base--img{
+    width: 100%;
+}
+
+.fad-menu-base--content-box{
+    width: 60%;
+    height: 400px;
+    margin-left: 80px;
+}
+
+.fad-menu-base--item:nth-child(2n) .fad-menu-base--content-box{
+    margin-left: 0px;
+    margin-right: 80px;
+}
+
+.fad-menu-base--content-list{
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    padding-left: 0;
+    overflow: auto;
+}
+
+.fad-menu-base--content-header{
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.fad-menu-base--content-desc{
+    color: var(--text-color);
+    font-size: 16px;
+    margin: 10px 0px 0px;
+}
+
+
+
+.fad-menu-base--content-price{
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0px;
+    justify-content: flex-end;
+    margin-right: 40px;
+    font-size: 20px;
+    color: var(--text-color);
+    position: relative;
+}
+
+.fad-menu-base--content-price::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 75%;
+    top: 81%;
+    left: 0%;
+    border-top: 1px solid var(--text-color);
+}
+
+
+.fad-menu-base--content-list::-webkit-scrollbar {
+    width: 10px;               /* Chiều rộng vùng chứa scrollbar */
+}
+.fad-menu-base--content-list::-webkit-scrollbar-track {
+    background: #fff;        /* Màu nền ngoài của thanh scrollbar */
+}
+.fad-menu-base--content-list::-webkit-scrollbar-thumb {
+    background-color: #fff;    /* Màu của thanh cuộn (scroll thumb) */
+    border-radius: 5px;       /* Bo góc scroll thumb */
+}
+.fad-menu-base--content-box:hover .fad-menu-base--content-list::-webkit-scrollbar-thumb{
+    background-color: rgba(0,0,0,0.1); /* Hiệu ứng di chuột đổi màu*/
+}
+
+
+/* base blog body  */
+.base-blog{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.base-blog__list{
+    list-style: none;
+    padding-left: 0;
+}
+
+.base-blog__item{
+    display: flex;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.base-blog__item:nth-child(2n){
+    flex-direction: row-reverse;   /*Đảo ngược vị trí của các phần tử ở thứ tự chẵn*/
+}
+
+.base-blog__item:last-child{
+    margin-bottom: 0;
+}
+
+.base-blog__item:last-child.base-blog__item::after{
+    display: none;
+}
+
+.base-blog__item::after{
+    position: absolute;
+    display: block;
+    content: "";
+    width: 31%;
+    border-top: 1px solid #e8555c;
+    bottom: -8%;
+    left: 35%;
+}
+
+.base-blog__item--img-box{
+    width: 35%;
+}
+
+.base-blog__item--img{
+    width: 100%;
+}
+
+.base-blog__item--content-box{
+    margin-left: 40px;
+    width: 65%;
+}
+
+.base-blog__item:nth-child(2n) .base-blog__item--content-box{
+    margin-left: 0;
+    margin-right: 40px;
+}
+
+.base-blog__item--content-heading{
+    display: block;
+    padding-top: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.base-blog__item--content-heading:hover{
+    text-decoration: underline;
+}
+
+.base-blog__item--content-desc{
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--text-color);
+    display: block;
+    padding: 10px 0 20px;
+}
+
+
+
+
+
