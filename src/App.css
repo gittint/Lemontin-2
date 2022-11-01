@@ -143,6 +143,7 @@ a{
   position: absolute;
   bottom: 3%;
   left: 44%;
+  z-index: 5;
 }
 
 .dot-icon{
@@ -150,6 +151,7 @@ a{
   padding-right: 10px;
   cursor: pointer;
   color: #3ba9a0;
+  z-index: 5;
 }
 
 .app-container__banner-img{
