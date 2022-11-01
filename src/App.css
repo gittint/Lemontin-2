@@ -141,9 +141,10 @@ a{
 
 .list-dot{
   position: absolute;
-  bottom: 3%;
-  left: 44%;
-  z-index: 5;
+  text-align: center;
+  bottom: 10px;
+  left: 0%;
+  width: 100%;
 }
 
 .dot-icon{
@@ -151,7 +152,6 @@ a{
   padding-right: 10px;
   cursor: pointer;
   color: #3ba9a0;
-  z-index: 5;
 }
 
 .app-container__banner-img{
