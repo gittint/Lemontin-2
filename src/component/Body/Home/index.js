@@ -15,6 +15,10 @@ import menu4 from "./img/menu4.png"
 import local1 from "./img/local1.png"
 import local2 from "./img/local2.png"
 import local3 from "./img/local3.jpg"
+import HomeBanner from './homeBanner'
+import HomeWelcome from './homeWelcome'
+import HomeMenu from './homeMenu'
+import HomeLocal from './homeLocal'
 
 function Home (){
     const bannerUrls = [banner1, banner2, banner3, banner4, banner5, banner6]
@@ -61,7 +65,6 @@ function Home (){
             link : "/menu-5"
         }
     ]
-
     const locals = [
         {
           src : local1,
@@ -100,122 +103,13 @@ function Home (){
     return( 
         <div className="grid">
 
-                {/* banner nếu active add : app-container__banner-img--active  */}
-                <div className="app-container__banner">
-                    <img src={banner1} alt="" className="app-container__banner-img app-container__banner-img-js app-container__banner-img--active"/>
+                <HomeBanner bannerUrls={bannerUrls}/>
 
-                    {
-                        bannerUrls.map((itemUrl,index)=>(
-                            <img src={itemUrl} key={index} alt="" className="app-container__banner-img app-container__banner-img-js"/>
-                        ))
-                    }
-                     
-                    <div className="list-dot">
-                        {
-                            bannerUrls.map((itemUrl,index)=>(
-                                <i key={index} className="fa-solid fa-circle dot-icon" />
-                            ))
-                        }
-                    </div>
-                </div>
+                <HomeWelcome blogs={blogs}/>
 
-                {/* welcome  */}
-                <div className="app-container__content">
-                    <div className="content__welcome">
-                        <h2 className="content__welcome-header">
-                            <Link to="/" className="content__welcome-header--link">Chào mừng đến Le Monde Steak</Link>                            
-                        </h2>
-                        <p className="content__welcome-header--text">Le Monde Steak là hệ thống Bít Tết theo phong cách thành thị Pháp đầu tiên tại Việt Nam, nơi thực khách tự do trải nghiệm những món ăn mang hương vị Pháp đầy lôi cuốn và tận hưởng khoảnh khắc thư giãn trong không gian mở gần gũi với thiên nhiên, lãng mạn đặc trưng của Pháp. Tất cả tạo nên một sự cộng hưởng mạnh mẽ, để lại trong lòng bạn ấn tượng khó quên.</p>
-                        
-                        {/* blog  */}
-                        <div className="content__welcome-blog grid__row">
+                <HomeMenu menus={menus}/>
 
-                            {
-                                blogs.map((blog,index)=>(
-                                    <div key={index} className="content__welcome-blog-item grid__column-3">
-                                        <Link to={blog.link} className="content__welcome-blog-item--link">
-                                            <div className="content__welcome-blog-item--background">
-                                                <img src={blog.src} alt="" className="content__welcome-blog-item--img"/>
-                                            </div>
-                                            <div className="content__welcome-blog-item--lable">
-                                                {blog.lable}
-                                            </div>
-                                        </Link>                              
-                                    </div>
-                                ))
-                            }
-
-                        </div>
-                    </div>
-                </div>
-
-                {/* menu  */}
-                <div className="app-container__content">
-                    <div className="main-menu">
-                        <div className="main-menu__header header-border-bottom">
-                            <h3 className="main-menu__header--text header-border-bottom__text">Thực đơn</h3>
-                        </div>
-
-                        <ul className="main-menu__list">
-
-                            {
-                                menus.map((menu,index)=>(
-                                    <li key={index} className="main-menu__list-item">
-                                        <Link to={menu.lable} className="main-menu__list-item--link">
-                                            <div className="main-menu__list-item--link-label">
-                                                <i className="main-menu__list-item--icon fa-regular fa-star"></i>
-                                                <i className="main-menu__list-item--icon-active fa-solid fa-star"></i>
-                                            <p className="main-menu__list-item--link-text">{menu.lable}</p> 
-                                            </div>
-                                            
-                                            <div className="main-menu__list-item--box main-menu__list-item--box--active" >
-                                                <img src={menu.src} alt="" className="main-menu__list-item--img"/>
-                                            </div>
-                                        </Link>
-                                    </li>
-                                    ))
-                            }
-
-                        </ul>
-                    </div>
-                </div>
-
-                {/* local  */}
-                <div className="app-container__content">
-                    <div className="content-local">
-                        <div className="content-local__header header-border-bottom">
-                            <h3 className="content-local__header--text header-border-bottom__text">Nhà hàng</h3>
-                        </div>
-
-                        <ul className="content-local__list">
-                            {
-                                locals.map((local,index)=>(
-                                    <li className="content-local__item" key={index}>
-                                        <div className="content-local__item-link">
-                                            <div className="content-local__item-box-img">
-                                                <img src={local.src} alt="" className="content-local__item-img"/>
-                                            </div>
-                                            <div className="content-local__item-content">
-                                                <div className="content-local__item-content-header" >
-                                                    {local.header}
-                                                </div>
-                                                <div className="content-local__item-content-text">
-                                                    <p>{local.text}</p>
-                                                    <p>Hotline: 0123456789</p>
-                                                </div>
-                                            </div>
-
-                                            <div className="content-local__item-map content-local__item-map--active" >
-                                                <iframe src={local.iframe}  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                            </div>
-                                        </div>
-                                    </li>
-                                ))
-                            }
-
-                        </ul>
-                    </div>
-                </div>
+                <HomeLocal locals={locals}/>
 
         </div>
     )
