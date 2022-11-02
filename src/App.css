@@ -643,3 +643,9 @@ i.main-menu__list-item--icon-active{
 .blog3__banner--img{
   width: 100%;
 }
+
+iframe{
+  width : 700px;
+  height : 450px; 
+  border : 0;
+}

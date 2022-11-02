@@ -7,6 +7,7 @@ import Menu from "./component/Body/Menu";
 import Info from "./component/Body/Info";
 import Sale from "./component/Body/Sale";
 import Blog from "./component/Body/Blog";
+import Footer from "./component/Footer"
 
 
 function App() {
@@ -25,8 +26,9 @@ function App() {
           </Routes>
         </div>
 
-        
+        <Footer/>
       </Router>
+
 
     
     </div>
