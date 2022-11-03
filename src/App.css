@@ -64,6 +64,7 @@ a{
 
 .nav__list-item:hover .nav__list-item--link{
   border-bottom: 2px solid #e8555c;
+  transition: all ease 0.2s;
 }
 
 .nav__list-item--link.nav__list-item--link--active{

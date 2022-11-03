@@ -103,13 +103,13 @@ function Home (){
     return( 
         <div className="grid">
 
-                <HomeBanner bannerUrls={bannerUrls}/>
+            <HomeBanner bannerUrls={bannerUrls}/>
 
-                <HomeWelcome blogs={blogs}/>
+            <HomeWelcome blogs={blogs}/>
 
-                <HomeMenu menus={menus}/>
+            <HomeMenu menus={menus}/>
 
-                <HomeLocal locals={locals}/>
+            <HomeLocal locals={locals}/>
 
         </div>
     )
