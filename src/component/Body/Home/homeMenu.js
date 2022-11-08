@@ -1,3 +1,6 @@
+import "./homeMenu.css"
+import "../body.css"
+import mobilePictureMenu from "./img/menu1.png"
 import {Link} from 'react-router-dom'
 
 function HomeMenu ({menus}){
@@ -8,8 +11,11 @@ function HomeMenu ({menus}){
                     <h3 className="main-menu__header--text header-border-bottom__text">Thực đơn</h3>
                 </div>
 
-                <ul className="main-menu__list">
+                <div className="main-menu__mobile-picture">
+                    <img src={mobilePictureMenu} className="main-menu__mobile-picture--src"/>
+                </div>
 
+                <ul className="main-menu__list">
                     {
                         menus.map((menu,index)=>(
                             <li key={index} className="main-menu__list-item">

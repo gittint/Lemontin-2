@@ -1,0 +1,120 @@
+/* nhà hàng local  */
+.content-local{
+    margin-top: 200px;
+    padding-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+  
+.content-local__list{
+    list-style: none;
+    background-color: #f2f3f5;
+    width: 40%;
+    margin-left: 35px;
+    margin-top: 40px;
+    padding: 30px 0px 30px 30px;
+    overflow: auto;
+    height: 450px;
+}
+  
+.content-local__item{
+    padding-bottom: 20px;
+}
+  
+.content-local__item:last-child{
+    padding-bottom: 0px;
+}
+  
+.content-local__item-link{
+    display: flex;
+    width: 100%;
+}
+  
+.content-local__item-box-img{
+    width: 100px;
+    height: 100px;
+}
+  
+.content-local__item-img{
+    width: 100%;
+    height: 100%;
+    /* fix ảnh vuông  */
+    object-fit: cover;
+    border-radius: 50%;
+}
+  
+  
+.content-local__item-content{
+    margin-left: 20px;
+}
+  
+.content-local__item-content-header{
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+  
+.content-local__item-content-header:hover{
+    text-decoration: underline;
+}
+  
+.content-local__item-content-text{
+    font-size: 16px;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+  
+.content-local__item-map{
+    position: absolute;
+    top: 20%;
+    left: 44%;
+    display: none;
+}
+  
+/* .content-local__item-link:hover .content-local__item-map{
+    display: block;
+} */
+  
+.content-local__item-map.content-local__item-map--active{
+    display: block;
+}
+
+@media (min-width:740px) and (max-width:1024px){
+    .content-local{
+        margin-top: 0;
+    }
+
+    .content-local__list{
+        margin-left: 10px;
+    }
+
+    .content-local__item-content{
+        padding-right: 10px;
+    }
+}
+
+@media (max-width:739px){
+    .content-local{
+        margin-top: 0;
+    }
+
+    .content-local__list{
+        width: auto;
+        margin-left: 0;
+        height: auto;
+    }
+
+    .content-local__item-link{
+        display: flex;
+    }
+
+    .content-local__item-content-text{
+        margin: 0;
+    }
+
+    .content-local__item-map{
+        position: static;
+        display: none !important;
+    }
+}

@@ -1,3 +1,5 @@
+import "./homeBanner.css"
+import "../body.css"
 import banner1 from "./img/banner-index-1.png"
 import {Link} from 'react-router-dom'
 

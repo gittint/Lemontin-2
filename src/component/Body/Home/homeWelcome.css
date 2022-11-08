@@ -1,0 +1,114 @@
+.content__welcome{
+    padding-top: 40px;
+    text-align: center;
+}
+  
+.content__welcome-header{
+    position: relative;
+}
+  
+.content__welcome-header::after{
+    position: absolute;
+    content: "";
+    width: 21%;
+    border-top: 3px solid #e8555c;
+    top: 167%;
+    left: 40%;
+}
+  
+.content__welcome-header--link{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: 700;
+}
+  
+.content__welcome-header--text{
+    display: block;
+    font-size: 18px;
+    line-height: 40px;
+    padding: 20px 50px 30px;
+}
+  
+.content__welcome-blog{
+    padding: 0 30px;
+}
+  
+.content__welcome-blog-item{
+    position: relative;
+    border: 2px solid rgba(209, 209, 209, 0.5);
+    background-color: #fdfcfb;
+}
+  
+.content__welcome-blog-item:hover{
+    opacity: 0.8;
+}
+  
+.content__welcome-blog-item--img{
+    width: 100%;
+    object-fit: contain;
+}
+  
+.content__welcome-blog-item--lable{
+    position: absolute;
+    top: 90%;
+    right: 0;
+    left: 0;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #737373;
+}
+
+@media (min-width:740px) and (max-width:1024px){
+    .content__welcome-blog-item{
+        width: 330px !important;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:739px){
+    .content__welcome-header--link{
+        font-size: 25px;
+        padding: 0 10px;
+        line-height: 35px;
+    }
+
+    .content__welcome-header::after {
+        top: 130%;
+        left: 39%;
+    }
+
+    .content__welcome-header--text{
+        line-height: 30px;
+    }
+
+    .content__welcome-blog-item{
+        margin-bottom: 30px;
+        height: 200px;
+    }
+
+    .content__welcome-blog-item--link{
+        height: 100%;
+    }
+
+    .content__welcome-blog-item--background{
+        height: 100%;
+    }
+
+    .content__welcome-blog-item--img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .content__welcome-blog-item--lable {
+        top: 170.5px;
+        /* text-shadow: 0 0 1px rgb(148, 145, 145); */
+        font-weight: 400;
+        background-color: rgb(255, 255, 255, 0.8);
+    }
+
+    
+    
+}

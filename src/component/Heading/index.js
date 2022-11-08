@@ -25,7 +25,7 @@ function Heading (){
 
                     {/* icon mobile  */}
                     <div className="nav__mobile" onClick={clickIconMobile}>
-                        <i class="fa-solid fa-bars nav__mobile-icon"></i>
+                        <i className="fa-solid fa-bars nav__mobile-icon"></i>
                     </div>
 
                     {/* list  */}

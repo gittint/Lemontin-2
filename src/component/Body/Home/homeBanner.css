@@ -1,0 +1,17 @@
+.list-dot{
+    position: absolute;
+    text-align: center;
+    bottom: 10px;
+    left: 0%;
+    width: 100%;
+}
+  
+.dot-icon{
+    font-size: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    color: #3ba9a0;
+}
+
+@media (min-width:740px) and (max-width:1024px){}
+@media (max-width:739px){}

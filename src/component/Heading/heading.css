@@ -140,9 +140,6 @@
 }
 
 @media (max-width:739px){
-    .header{
-
-    }
 
     .nav{
         display: block;
@@ -164,11 +161,15 @@
     .nav__list{
         background-color: rgba(255,255,255,0.95) ;
         width: auto;
-        padding: 0;
+        padding: 0 0 10px 0;
         display: none;
     }
 
     .nav__list.active{
         display: block;
+    }
+
+    .nav__list-item:hover .nav__list-option{
+        display: none;
     }
 }
