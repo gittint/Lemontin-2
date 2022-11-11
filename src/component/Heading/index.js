@@ -2,8 +2,87 @@ import "./heading.css"
 import {Link} from 'react-router-dom'
 import logo from "./img/logo-le-monde-steak-v3.png"
 import icon from "./img/vi.png"
+import NavItems from "./navItems"
 
 function Heading (){
+
+    const navLists = [
+        {
+            linkto: "/",
+            name: "Trang chủ",
+            navItems : []
+        },
+        {
+            linkto: "/info-1",
+            name: "Thông tin",
+            navItems : [
+                {
+                    linkto: "/info-1",
+                    name: "Câu chuyện về chúng tôi"
+                },
+                {
+                    linkto: "/info-2",
+                    name: "Hệ thống nhà hàng"
+                },
+                {
+                    linkto: "/info-3",
+                    name: "Khách hàng của chúng tôi"
+                }
+            ]
+        },
+        {
+            linkto: "/menu-1",
+            name: "Thực đơn",
+            navItems : [
+                {
+                    linkto: "/menu-1",
+                    name: "Bếp trưởng gợi ý"
+                },
+                {
+                    linkto: "/menu-2",
+                    name: "Đồ ăn"
+                },
+                {
+                    linkto: "/menu-3",
+                    name: "Dồ uống"
+                },
+                {
+                    linkto: "/menu-4",
+                    name: "Set combo"
+                },
+                {
+                    linkto: "/menu-5",
+                    name: "Thực đơn mới"
+                }
+            ]
+        },
+        {
+            linkto: "/sale",
+            name: "Khuyến mãi",
+            navItems : []
+        },
+        {
+            linkto: "/blog-1",
+            name: "Blog",
+            navItems : [
+                {
+                    linkto: "/blog-1",
+                    name: "Nguyên liệu nhà làm"
+                },
+                {
+                    linkto: "/blog-2",
+                    name: "Phong cách ẩm thực"
+                },
+                {
+                    linkto: "/blog-3",
+                    name: "Trải nghiệm nhà hàng"
+                }
+            ]
+        }
+
+    ]
+
+
     function clickIconMobile(){
         var navMenu = document.querySelector(".nav__list");
         console.log(navMenu);
@@ -31,65 +110,16 @@ function Heading (){
                     {/* list  */}
                     <ul className="nav__list">
 
-                        {/* item  */}
-                        <li className="nav__list-item">
-                            <Link to="/" className="nav__list-item--link nav__list-item--link--active" onClick={clickIconMobile}>Trang chủ</Link>
-                        </li>
-                        
-                        <li className="nav__list-item">
-                            <Link to="/info-1" className="nav__list-item--link" onClick={clickIconMobile}>Thông tin</Link>
-                            <ul className="nav__list-option">
-                                <li className="nav__list-option-item">
-                                    <Link to="/info-1" className="nav__list-option-item--link">Câu chuyện về chúng tôi</Link>
+                        {
+                            navLists.map((navlist,index)=>(
+                                <li key={index} className="nav__list-item">
+                                    <Link to={navlist.linkto} className="nav__list-item--link" onClick={clickIconMobile}>{navlist.name}</Link>
+                                    <NavItems list={navlist.navItems}/>
                                 </li>
-                                <li className="nav__list-option-item">
-                                    <Link to="/info-2" className="nav__list-option-item--link">Hệ thống nhà hàng</Link>
-                                </li>
-                                <li className="nav__list-option-item">
-                                    <Link to="/info-3" className="nav__list-option-item--link">Khách hàng của chúng tôi</Link>
-                                </li>
-                            </ul>
-                        </li>
+                            ))
+                        }
 
-                        <li className="nav__list-item">
-                            <Link to="/menu-1" className="nav__list-item--link" onClick={clickIconMobile}>Thực đơn</Link>
-                            <ul className="nav__list-option">
-                                <li className="nav__list-option-item">
-                                    <Link to="/menu-1" className="nav__list-option-item--link">Bếp trưởng gợi ý</Link>
-                                </li>
-                                <li className="nav__list-option-item">
-                                    <Link to="/menu-2" className="nav__list-option-item--link">Đồ ăn</Link>
-                                </li>
-                                <li className="nav__list-option-item">
-                                    <Link to="/menu-3" className="nav__list-option-item--link">Đồ uống</Link>
-                                </li>
-                                <li className="nav__list-option-item">
-                                    <Link to="/menu-4" className="nav__list-option-item--link">Set combo</Link>
-                                </li>
-                                <li className="nav__list-option-item">
-                                    <Link to="/menu-5" className="nav__list-option-item--link">Thực đơn mới</Link>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li className="nav__list-item">
-                            <Link to="/sale" className="nav__list-item--link" onClick={clickIconMobile}>Khuyến mãi</Link>
-                        </li>
-
-                        <li className="nav__list-item">
-                            <Link to="/blog-1" className="nav__list-item--link" onClick={clickIconMobile}>Blog</Link>
-                            <ul className="nav__list-option">
-                                <li className="nav__list-option-item">
-                                    <Link to="/blog-1" className="nav__list-option-item--link">Nguyên liệu nhà làm</Link>
-                                </li>
-                                <li className="nav__list-option-item">
-                                    <Link to="/blog-2" className="nav__list-option-item--link">Phong cách ẩm thực</Link>
-                                </li>
-                                <li className="nav__list-option-item">
-                                    <Link to="/blog-3" className="nav__list-option-item--link">Trải nghiệm nhà hàng</Link>
-                                </li>
-                            </ul>
-                        </li>
+                        {/* item  nếu gạch chân : nav__list-item--link nav__list-item--link--active*/}
 
                         <li className="nav__list-item">
                             <Link to="/e" className="nav__list-item--link" onClick={clickIconMobile}>
