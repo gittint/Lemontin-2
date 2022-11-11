@@ -9,11 +9,11 @@ function InfoMenu (){
                 <img src={banner} alt="" className="app-container__banner-img"/>
             </div>
 
-            {/* base menu  */}
+            {/* base menu  nếu active : menu-base--item menu-base--item--active*/}
             <div className="app-container__content info-app-container__content">
                 <div className="menu-base">
                     <ul className="menu-base--list">
-                        <Link to="/info-1" className="menu-base--item menu-base--item--active">
+                        <Link to="/info-1" className="menu-base--item">
                             <div className="menu-base--link">
                                 <div className="menu-base--icon-box">
                                     <i className="menu-base--icon fa-solid fa-scroll"></i>

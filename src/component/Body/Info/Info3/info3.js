@@ -1,6 +1,7 @@
-import InfoMenu from "./infoMenu";
-import khachhang from "./img/khach-hang.gif";
-import recommend from "./img/customer_recommend_vie_1557050487.png"
+import InfoMenu from "../infoMenu";
+import "./info3.css"
+import khachhang from "../img/khach-hang.gif";
+import recommend from "../img/customer_recommend_vie_1557050487.png"
 
 function Info3 (){
     return(

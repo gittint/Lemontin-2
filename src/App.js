@@ -6,9 +6,9 @@ import Menu from "./component/Body/Menu";
 import Sale from "./component/Body/Sale";
 import Blog from "./component/Body/Blog";
 import Footer from "./component/Footer";
-import Info1 from "./component/Body/Info/info1";
-import Info2 from "./component/Body/Info/info2";
-import Info3 from "./component/Body/Info/info3";
+import Info1 from "./component/Body/Info/Info1/info1";
+import Info2 from "./component/Body/Info/Info2/info2";
+import Info3 from "./component/Body/Info/Info3/info3";
 
 
 function App() {

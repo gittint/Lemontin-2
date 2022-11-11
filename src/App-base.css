@@ -443,6 +443,42 @@ html{
 }
 
 
+@media (min-width:740px) and (max-width:1024px){
+    .menu-base--list{
+        width: 100%;
+    }
 
+    .menu-base--item {
+        width: calc((100%/3) - 50px);
+        border: 1px solid #f2f1f1;
+        text-align: center;
+        margin: 2px 20px;
+        background-color: var(--background-color);
+    }
+}
+
+@media (max-width:739px){
+    .menu-base--list{
+        width: 100%;
+    }
+
+    .menu-base--item {
+        width: calc((100%/3) - 10px);
+        height: 100px;
+        border: 1px solid #f2f1f1;
+        text-align: center;
+        margin: 2px 5px;
+        background-color: var(--background-color);
+    }
+
+    .menu-base--label{
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .menu-base--icon{
+        font-size: 25px;
+    }
+}
 
 

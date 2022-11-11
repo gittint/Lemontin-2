@@ -1,0 +1,15 @@
+.info1-content__body{
+  display: flex;
+  margin: 40px auto 0;
+  justify-content: center;  
+  width: 90%;
+}
+
+.info1-content__body img{
+  width: 100%;
+}
+
+@media (min-width:740px) and (max-width:1024px){
+
+}
+@media (max-width:739px){}

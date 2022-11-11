@@ -1,0 +1,30 @@
+.info3-content__body-banner{ 
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info3-content__body-banner-img-box{
+  width: 70%;
+}
+
+.info3-content__body-banner-img{
+  width: 100%;
+  margin: auto;
+}
+
+.info3-content__body-feedback{
+  width: 90%;
+}
+
+.info3-content__body-feedback-img{
+  width: 100%;
+}
+
+@media (min-width:740px) and (max-width:1024px){}
+@media (max-width:739px){
+  .info3-content__body-banner-img-box{
+    width: 90%;
+  }
+}
