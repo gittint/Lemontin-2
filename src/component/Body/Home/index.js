@@ -15,10 +15,10 @@ import menu4 from "./img/menu4.png"
 import local1 from "./img/local1.png"
 import local2 from "./img/local2.png"
 import local3 from "./img/local3.jpg"
-import HomeBanner from './homeBanner'
-import HomeWelcome from './homeWelcome'
-import HomeMenu from './homeMenu'
-import HomeLocal from './homeLocal'
+import HomeBanner from './HomeBanner/homeBanner'
+import HomeWelcome from './HomeWelcome/homeWelcome'
+import HomeMenu from './HomeMenu/homeMenu'
+import HomeLocal from './HomeLocal/homeLocal'
 
 function Home (){
     const bannerUrls = [banner1, banner2, banner3, banner4, banner5, banner6]

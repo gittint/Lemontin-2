@@ -1,6 +1,5 @@
 import "./homeMenu.css"
-import "../body.css"
-import mobilePictureMenu from "./img/menu1.png"
+import mobilePictureMenu from "../img/menu1.png"
 import {Link} from 'react-router-dom'
 
 function HomeMenu ({menus}){

@@ -1,5 +1,4 @@
 import "./homeLocal.css"
-import "../body.css"
 import {Link} from 'react-router-dom'
 
 function HomeLocal ({locals}) {
