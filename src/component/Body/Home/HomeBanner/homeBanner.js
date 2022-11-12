@@ -5,27 +5,31 @@ import {useState ,useCallback, useEffect} from "react"
 
 function HomeBanner ({bannerUrls}){
     var slideIndex = 0;
-    var slides = [];
-    var doticons =[];
-    const [i, setI] = useState(0);
+    var [slides, setSlides] = useState([]);
+    var [dotIcons, setDotIcons] = useState([]);
+    var [btnLeft, setBtnLeft] = useState(0);
+    var [btnRight , setBtnRight] = useState(0);
+    const [deps, setDeps] = useState(0);
 
     useEffect(function(){
-        var getslide = document.querySelectorAll(".app-container__banner-img.app-container__banner-img-js");
-        slides = getslide;
-        console.log(slides[0])
+        setDeps(1);
+        setSlides(document.querySelectorAll(".app-container__banner-img.app-container__banner-img-js"));
+        console.log("slides",slides);
 
-        var getdoticon = document.querySelectorAll(".dot-icon");
-        doticons = getdoticon;
-        console.log(doticons);
+        setDotIcons(document.querySelectorAll(".dot-icon"))
+        console.log("dot icons",dotIcons);
+
+        setBtnLeft(document.querySelector(".app-container__banner-btn-left"));
+        setBtnRight(document.querySelector(".app-container__banner-btn-right"));
+        console.log(btnLeft,btnRight)
 
         showSlides(slideIndex);
         changerSlides();
 
-    }, [])
+    },[deps] )
 
     //show slide
     function showSlides(n) {
-        let i;
 
         if (n > slides.length-1){
             slideIndex = 0;
@@ -35,61 +39,80 @@ function HomeBanner ({bannerUrls}){
             slideIndex = slides.length-1;
         }
 
-        for (i = 0; i < slides.length; i++) {
-        slides[i].classList.remove('app-container__banner-img--active');  
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].classList.remove('app-container__banner-img--active');  
         }
 
-        for (i = 0; i < doticons.length; i++) {
-            doticons[i].classList.remove("dot-icon--active");
+        for (let i = 0; i < dotIcons.length; i++) {
+            dotIcons[i].classList.remove("dot-icon--active");
         }
 
         try {
             // Khối lệnh có thể xảy ra lỗi
             slides[slideIndex].classList.add("app-container__banner-img--active");  
-            doticons[slideIndex].classList.add("dot-icon--active");
+            dotIcons[slideIndex].classList.add("dot-icon--active");
         }
         catch (ex) {
             // Khối lệnh thực thi nếu có lỗi
-            console.log("lỗi thứ nhất : không tìm thấy classList chắc do asyn await")
+            console.log("lỗi #1 : không tìm thấy classList (do asyn await)")
         }
         finally {
-            // Khối lệnh này sẽ được thực thi
-            // cho dù có lỗi hay không lỗi
+            // Khối lệnh này sẽ được thực thi cho dù có lỗi hay không lỗi
         }
 
     }
 
     //Tự động chuyển slide 5 giây 
     function autoChangerSlide(){
-        clearInterval(auto);
         var auto = setInterval(function(){
-            slideIndex+=1;
+            slideIndex +=1;
             showSlides(slideIndex);
             return slideIndex;
-        },5000);
+        },1000);
     }
+
+    // var [auto, setAuto] = useState(0);
+    // useEffect(()=>{
+    //     setTimeout(function(){
+    //         slideIndex +=1;
+    //         showSlides(slideIndex);
+
+    //         setAuto(auto+1);
+    //         console.log(auto);
+    //         return slideIndex
+    //     },1000);
+    // },[auto])
 
     //Click nút chấm chuyển slide
     function changerSlides(){
-        for(let i = 0; i< doticons.length ; i++){
-            doticons[i].addEventListener("click",()=>{
+        for(let i = 0; i< dotIcons.length ; i++){
+            dotIcons[i].addEventListener("click",()=>{
                 slideIndex = i;
+                console.log(slideIndex)
                 showSlides(slideIndex);
             })
         }
     }
 
-    //click nút sang phải
-    document.querySelector(".app-container__banner-btn-right").addEventListener("click",()=>{
-        slideIndex +=1 ;
-        showSlides(slideIndex);
-    })
+    try{
+        if(btnLeft !== 0 & btnRight !== 0){
+            //click nút sang phải
+            btnRight.addEventListener("click",()=>{
+                slideIndex+=1 ;
+                showSlides(slideIndex);
+            })
 
-    //click nút sang trái
-    document.querySelector(".app-container__banner-btn-left").addEventListener("click",()=>{
-        slideIndex -=1 ;
-        showSlides(slideIndex);
-    })
+            //click nút sang trái
+            btnLeft.addEventListener("click",()=>{
+                slideIndex-=1 ;
+                showSlides(slideIndex);
+            })
+        }
+    }
+    catch{
+        console.log("Lỗi 2 : nút btn chưa render ra màn hình đã dùng dom element")
+    }
+
 
     return(
         // banner nếu active add : app-container__banner-img--active 
