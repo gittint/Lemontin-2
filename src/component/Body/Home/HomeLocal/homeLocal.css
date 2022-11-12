@@ -27,7 +27,7 @@
   
 .content-local__item-link{
     display: flex;
-    width: 100%;
+    width: auto;
 }
   
 .content-local__item-box-img{

@@ -13,5 +13,74 @@
     color: #3ba9a0;
 }
 
-@media (min-width:740px) and (max-width:1024px){}
-@media (max-width:739px){}
+.dot-icon:hover{
+    color: #054a44;
+}
+
+.dot-icon.dot-icon--active{
+    color: #054a44;
+}
+
+.app-container__banner-btn-right{
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    top: 45%;
+    right: 1%;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.app-container__banner-btn-left{
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    top: 45%;
+    left: 1%;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.app-container__banner-btn-right:hover,.app-container__banner-btn-left:hover {
+    color: black;
+    background-color: white;
+}
+
+@media (min-width:740px) and (max-width:1024px){
+    .app-container__banner-btn-left, .app-container__banner-btn-right{
+        top: 40%;
+    }
+}
+@media (max-width:739px){
+    .app-container__banner-btn-left, .app-container__banner-btn-right{
+        top: 35%;
+        border: none;
+    }
+
+    .app-container__banner-btn-left{
+        left: -10px;
+    }
+
+    .app-container__banner-btn-right{
+        right: -10px;
+    }
+
+    .app-container__banner-btn-right:hover,.app-container__banner-btn-left:hover {
+        color: white;
+        background-color: transparent;
+    }
+}
