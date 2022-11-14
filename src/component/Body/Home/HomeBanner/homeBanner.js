@@ -1,10 +1,10 @@
 import "./homeBanner.css"
 import banner1 from "../img/banner-index-1.png"
 import {Link} from 'react-router-dom'
-import {useState ,useCallback, useEffect} from "react"
+import {useState ,useCallback, useEffect, useRef, useMemo} from "react"
 
 function HomeBanner ({bannerUrls}){
-    var slideIndex = 0;
+    var slideIndex = useRef(0);
     var [slides, setSlides] = useState([]);
     var [dotIcons, setDotIcons] = useState([]);
     var [btnLeft, setBtnLeft] = useState(0);
@@ -23,20 +23,20 @@ function HomeBanner ({bannerUrls}){
         setBtnRight(document.querySelector(".app-container__banner-btn-right"));
         console.log(btnLeft,btnRight)
 
-        showSlides(slideIndex);
-        changerSlides();
+        showSlides(slideIndex.current);
+        // changerSlides();
 
-    },[deps] )
+    },[deps])
 
     //show slide
     function showSlides(n) {
 
         if (n > slides.length-1){
-            slideIndex = 0;
+            slideIndex.current = 0;
         }    
 
         if (n < 0) {
-            slideIndex = slides.length-1;
+            slideIndex.current = slides.length-1;
         }
 
         for (let i = 0; i < slides.length; i++) {
@@ -49,8 +49,8 @@ function HomeBanner ({bannerUrls}){
 
         try {
             // Khối lệnh có thể xảy ra lỗi
-            slides[slideIndex].classList.add("app-container__banner-img--active");  
-            dotIcons[slideIndex].classList.add("dot-icon--active");
+            slides[slideIndex.current].classList.add("app-container__banner-img--active");  
+            dotIcons[slideIndex.current].classList.add("dot-icon--active");
         }
         catch (ex) {
             // Khối lệnh thực thi nếu có lỗi
@@ -62,56 +62,65 @@ function HomeBanner ({bannerUrls}){
 
     }
 
-    //Tự động chuyển slide 5 giây 
-    function autoChangerSlide(){
-        var auto = setInterval(function(){
-            slideIndex +=1;
-            showSlides(slideIndex);
-            return slideIndex;
-        },1000);
-    }
+    //Tự động chuyển slide 5 giây
+    // useMemo 
+    // function autoChangerSlide(){
+    //     clearInterval(auto);
+    //     var auto = setInterval(function(){
+    //         slideIndex +=1;
+    //         showSlides(slideIndex);
+    //         return slideIndex;
+    //     },1000);
+    // }
+    // autoChangerSlide();
 
     // var [auto, setAuto] = useState(0);
     // useEffect(()=>{
     //     setTimeout(function(){
     //         slideIndex +=1;
+    //         setAuto((auto)=>(auto+1));
     //         showSlides(slideIndex);
-
-    //         setAuto(auto+1);
     //         console.log(auto);
     //         return slideIndex
     //     },1000);
     // },[auto])
 
     //Click nút chấm chuyển slide
-    function changerSlides(){
+    useMemo(function(){
         for(let i = 0; i< dotIcons.length ; i++){
             dotIcons[i].addEventListener("click",()=>{
-                slideIndex = i;
-                console.log(slideIndex)
-                showSlides(slideIndex);
+                slideIndex.current = i;
+                showSlides(slideIndex.current);
             })
         }
-    }
+    },[dotIcons])
+    // function changerSlides(){
+    //     for(let i = 0; i< dotIcons.length ; i++){
+    //         dotIcons[i].addEventListener("click",()=>{
+    //             slideIndex.current = i;
+    //             showSlides(slideIndex.current);
+    //         })
+    //     }
+    // }
 
-    try{
-        if(btnLeft !== 0 & btnRight !== 0){
-            //click nút sang phải
-            btnRight.addEventListener("click",()=>{
-                slideIndex+=1 ;
-                showSlides(slideIndex);
-            })
-
-            //click nút sang trái
-            btnLeft.addEventListener("click",()=>{
-                slideIndex-=1 ;
-                showSlides(slideIndex);
-            })
+    useMemo(function(){
+        try{
+            if(btnLeft !== 0 & btnRight !== 0){
+                //click nút sang phải
+                btnRight.addEventListener("click",()=>{
+                    showSlides(slideIndex.current+=1);
+                })
+    
+                //click nút sang trái
+                btnLeft.addEventListener("click",()=>{
+                    showSlides(slideIndex.current-=1);
+                })
+            }
         }
-    }
-    catch{
-        console.log("Lỗi 2 : nút btn chưa render ra màn hình đã dùng dom element")
-    }
+        catch{
+            console.log("Lỗi 2 : nút btn chưa render ra màn hình đã dùng dom element")
+        }
+    },[btnLeft])
 
 
     return(
@@ -133,11 +142,11 @@ function HomeBanner ({bannerUrls}){
             </div>
 
             <div className="app-container__banner-btn-left">
-                <i class="fa-solid fa-angle-left"></i>
+                <i className="fa-solid fa-angle-left"></i>
             </div>
 
             <div className="app-container__banner-btn-right">
-                <i class="fa-solid fa-angle-right"></i>
+                <i className="fa-solid fa-angle-right"></i>
             </div>
         </div>
     )
