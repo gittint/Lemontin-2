@@ -57,53 +57,6 @@ p{
 
 /* --------------------------------------------- SALE ---------------------------------------------------------- */
 
-.sale-content__body{
-  width: 80%;
-  margin: 0 auto;
-}
-
-.sale-body__list{
-  list-style: none;
-  padding-left: 0;
-}
-
-.sale-body__item{
-  display: flex;
-  margin-top: 40px;
-
-}
-
-.sale-body__item--img-box{
-  width: 35%;
-}
-
-.sale-body__item--img{
-  width: 100%;
-  object-fit: contain;
-}
-
-.sale-body__item--content-box{
-  width: 65%;
-  margin-left: 60px;
-}
-
-.sale-body__item--heading{
-  text-decoration: none;
-  color: var(--text-color);
-  font-size: 25px;
-  font-weight: 600;
-}
-
-.sale-body__item--heading:hover{
-  text-decoration: underline;
-}
-
-.sale-body__item--desc{
-  color: var(--text-color);
-  font-size: 16px;
-  line-height: 20px;
-}
-
 /* --------------------------------------------- BLOG ---------------------------------------------------------- */
 .blog3__content-body{
   margin-top: 40px;
