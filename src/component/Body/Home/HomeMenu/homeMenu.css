@@ -25,7 +25,7 @@
   
 .main-menu__list{
     list-style: none;
-    padding-left: 0;
+    padding-left: 40px;
     position: relative;
 }
   
@@ -136,6 +136,10 @@ i.main-menu__list-item--icon-active{
 
     .main-menu__list-item--box{
         display: none;
+    }
+
+    .main-menu__list-item--icon,.main-menu__list-item--icon-active{
+        display: none !important;
     }
 
     /* Mobile-picture-menu  */

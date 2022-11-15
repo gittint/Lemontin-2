@@ -22,15 +22,15 @@
 }
 
 .app-container__banner-btn-right{
-    display: none;
+    /* display: none; */
     width: 60px;
     height: 60px;
-    color: white;
+    color: #3ba9a0;
     font-weight: 600;
     position: absolute;
     top: 45%;
     right: 1%;
-    /* display: flex; */
+    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 25px;
@@ -38,19 +38,23 @@
 }
 
 .app-container__banner-btn-left{
-    display: none;
+    /* display: none; */
     width: 60px;
     height: 60px;
-    color: white;
+    color: #3ba9a0;
     font-weight: 600;
     position: absolute;
     top: 45%;
     left: 1%;
-    /* display: flex; */
+    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 25px;
     cursor: pointer;
+}
+
+.app-container__banner-btn-left:hover,.app-container__banner-btn-right:hover{
+    color: #054a44;
 }
 
 @media (min-width:740px) and (max-width:1024px){

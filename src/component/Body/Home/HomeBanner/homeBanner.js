@@ -13,6 +13,7 @@ function HomeBanner ({bannerUrls}){
 
     useEffect(function(){
         setDeps(1);
+        
         setSlides(document.querySelectorAll(".app-container__banner-img.app-container__banner-img-js"));
         console.log("slides",slides);
 
@@ -62,30 +63,18 @@ function HomeBanner ({bannerUrls}){
 
     }
 
-    //Tự động chuyển slide 5 giây
-    // useMemo 
-    // function autoChangerSlide(){
-    //     clearInterval(auto);
-    //     var auto = setInterval(function(){
-    //         slideIndex +=1;
-    //         showSlides(slideIndex);
-    //         return slideIndex;
-    //     },1000);
-    // }
-    // autoChangerSlide();
+    // Tự động chuyển slide 5 giây - autoChangerSlide
+    // useMemo(function(){
+    //     if(slides.length >=1 ){
+    //         var auto = setInterval(function(){
+    //             showSlides(slideIndex.current+=1);
+    //             // return slideIndex.current;
+    //         },1000);
+    //     }
+    // },[slides])
 
-    // var [auto, setAuto] = useState(0);
-    // useEffect(()=>{
-    //     setTimeout(function(){
-    //         slideIndex +=1;
-    //         setAuto((auto)=>(auto+1));
-    //         showSlides(slideIndex);
-    //         console.log(auto);
-    //         return slideIndex
-    //     },1000);
-    // },[auto])
 
-    //Click nút chấm chuyển slide
+    //Click nút chấm chuyển slide - changerSlide
     useMemo(function(){
         for(let i = 0; i< dotIcons.length ; i++){
             dotIcons[i].addEventListener("click",()=>{
@@ -94,15 +83,8 @@ function HomeBanner ({bannerUrls}){
             })
         }
     },[dotIcons])
-    // function changerSlides(){
-    //     for(let i = 0; i< dotIcons.length ; i++){
-    //         dotIcons[i].addEventListener("click",()=>{
-    //             slideIndex.current = i;
-    //             showSlides(slideIndex.current);
-    //         })
-    //     }
-    // }
 
+    //Click nút sang trái, phải
     useMemo(function(){
         try{
             if(btnLeft !== 0 & btnRight !== 0){

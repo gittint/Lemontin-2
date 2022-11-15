@@ -92,6 +92,16 @@
     .content-local__item-content{
         padding-right: 10px;
     }
+
+    .content-local__item-map iframe{
+        width: 430px;
+    }
+
+    .content-local__item-map{
+        top: 21%;
+        left: 44%;
+    }
+
 }
 
 @media (max-width:739px){
