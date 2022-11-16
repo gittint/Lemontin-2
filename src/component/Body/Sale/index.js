@@ -11,6 +11,7 @@ import {memo} from "react"
 
 import axios from 'axios'
 
+
 function Sale (){
 
     const [datas,setDatas]  = useState([])

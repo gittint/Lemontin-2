@@ -15,7 +15,7 @@ function BlogContent ({list}){
                                 <div className="base-blog__item--content-box">
                                     <a href="" className="base-blog__item--content-heading">{item.heading}</a>
                                     <div className="base-blog__item--content-desc">{item.desc}</div>
-                                    <a href="" className="button-base">Xem tiếp</a>
+                                    <a href="" className="button-base base-blog__item--button">Xem tiếp</a>
                                 </div>
                             </li>
                         ))

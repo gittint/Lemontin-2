@@ -20,7 +20,8 @@
   
 .sale-body__item--img{
     width: 100%;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
 }
   
 .sale-body__item--content-box{
@@ -49,7 +50,11 @@
     margin-top: 15px;
 }
 
-@media (min-width:740px) and (max-width:1024px){}
+@media (min-width:740px) and (max-width:1024px){
+    .sale-body__item--img{
+        object-fit: contain;
+    }
+}
 @media (max-width:739px){
     .sale-body__item{
         display: block;
@@ -58,6 +63,8 @@
     .sale-body__item--img-box{
         width: auto;
         margin: 0 auto;
+        height: 150px;
+        margin-bottom: 10px;
     }
 
     .sale-body__item--content-box{
