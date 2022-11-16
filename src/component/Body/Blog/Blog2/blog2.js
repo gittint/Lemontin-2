@@ -3,6 +3,7 @@ import BlogContent from "../blogContent";
 import blog2_1 from "../img/blog-2-1.jpg"
 import blog2_2 from "../img/blog-2-2.jpg"
 import blog2_3 from "../img/blog-2-3.jpg"
+import "../../baseNavBody.css";
 import "../baseBlog.css"
 
 

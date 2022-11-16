@@ -1,5 +1,6 @@
 import InfoMenu from "../infoMenu";
 import "./info3.css"
+import "../../baseNavBody.css";
 import khachhang from "../img/khach-hang.gif";
 import recommend from "../img/customer_recommend_vie_1557050487.png"
 

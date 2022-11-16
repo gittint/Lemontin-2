@@ -1,5 +1,6 @@
 import InfoMenu from "../infoMenu";
 import "./info2.css"
+import "../../baseNavBody.css";
 import local1 from "../img/local1.png"
 import local2 from "../img/local2.png"
 import local3 from "../img/local3.jpg"

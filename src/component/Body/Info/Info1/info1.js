@@ -1,5 +1,6 @@
 import InfoMenu from "../infoMenu";
 import "./info1.css"
+import "../../baseNavBody.css";
 import info1 from "../img/story_web_1570017889.jpg"
 
 function Info1 (){

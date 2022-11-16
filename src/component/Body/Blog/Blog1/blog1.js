@@ -2,6 +2,8 @@ import BlogMenu from "../blogMenu";
 import BlogContent from "../blogContent";
 import blog1_1 from "../img/blog-1-1.jpg"
 import blog1_2 from "../img/blog-1-2.jpg"
+import "../../baseNavBody.css";
+
 import "../baseBlog.css"
 
 
