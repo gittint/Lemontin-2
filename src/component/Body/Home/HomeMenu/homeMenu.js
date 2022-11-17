@@ -77,7 +77,7 @@ function HomeMenu ({menus}){
                     {
                         menus.map((menu,index)=>(
                             <li key={index} className="main-menu__list-item">
-                                <Link to={menu.lable} className="main-menu__list-item--link">
+                                <Link to={menu.link} className="main-menu__list-item--link">
                                     <div className="main-menu__list-item--link-label">
                                         <i className="main-menu__list-item--icon fa-regular fa-star"></i>
                                         <i className="main-menu__list-item--icon-active fa-solid fa-star"></i>

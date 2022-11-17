@@ -1,0 +1,226 @@
+/* base menu FAD */
+
+.fad-menu-base{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.fad-menu-base--list{
+    padding-left: 0;
+    list-style: none;
+    width: 85%;
+}
+
+.fad-menu-base--item{
+    padding-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fad-menu-base--item:first-child{
+    margin-top: 0px;
+}
+
+.fad-menu-base--item:nth-child(2n){
+    flex-direction: row-reverse;   /*Đảo ngược vị trí của các phần tử ở thứ tự chẵn*/
+}
+
+.fad-menu-base--img-box{
+    text-align: center;
+    width: 40%;
+}
+
+.fad-menu-base--img-label{
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.fad-menu-base--img{
+    width: 100%;
+}
+
+.fad-menu-base--content-box{
+    width: 60%;
+    height: 400px;
+    margin-left: 80px;
+}
+
+.fad-menu-base--item:nth-child(2n) .fad-menu-base--content-box{
+    margin-left: 0px;
+    margin-right: 80px;
+}
+
+.fad-menu-base--content-list{
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    padding-left: 0;
+    overflow: auto;
+}
+
+.fad-menu-base--content-header{
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.fad-menu-base--content-desc{
+    color: var(--text-color);
+    font-size: 16px;
+    margin: 10px 0px 0px;
+}
+
+
+
+.fad-menu-base--content-price{
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0px;
+    justify-content: flex-end;
+    margin-right: 40px;
+    font-size: 20px;
+    color: var(--text-color);
+    position: relative;
+}
+
+.fad-menu-base--content-price::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 75%;
+    top: 81%;
+    left: 0%;
+    border-top: 1px solid var(--text-color);
+}
+
+
+.fad-menu-base--content-list::-webkit-scrollbar {
+    width: 10px;               /* Chiều rộng vùng chứa scrollbar */
+}
+.fad-menu-base--content-list::-webkit-scrollbar-track {
+    background: #fff;        /* Màu nền ngoài của thanh scrollbar */
+}
+.fad-menu-base--content-list::-webkit-scrollbar-thumb {
+    background-color: #fff;    /* Màu của thanh cuộn (scroll thumb) */
+    border-radius: 5px;       /* Bo góc scroll thumb */
+}
+.fad-menu-base--content-box:hover .fad-menu-base--content-list::-webkit-scrollbar-thumb{
+    background-color: rgba(0,0,0,0.1); /* Hiệu ứng di chuột đổi màu*/
+}
+
+
+/* base menu buy */
+.base-menu-buy__list{
+    list-style: none;
+    padding-left: 0;
+}
+
+.base-menu-buy__item{
+    margin: 0 auto 60px;
+    width: 1000px;
+    min-height: 300px;
+    background-color: #f1f4f5;
+    display: flex;
+}
+
+.base-menu-buy__item:nth-child(2n){
+    flex-direction: row-reverse;   /*Đảo ngược vị trí của các phần tử ở thứ tự chẵn*/
+}
+
+.base-menu-buy__item--img-box{
+    margin: 0 60px;
+    height: 300px;
+    width: 40%;
+}
+
+.base-menu-buy__item--img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.base-menu-buy__item--content-box{
+    padding: 40px 0 20px 0;
+    width: 30%;
+    flex-wrap: wrap;
+}
+
+.base-menu-buy__item--link{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.base-menu-buy__item--link:hover{
+    text-decoration: underline;
+}
+
+.base-menu-buy__item--desc{
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+.base-menu-buy__item--desc-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+.base-menu-buy__item--desc-item{
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.base-menu-buy__item--price{
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+    font-weight: 600;
+    padding: 5px 0;
+    margin-top: 10px;
+}
+
+/* base sub menu  */
+
+.sub-menu-base{
+    display: flex;
+    justify-content: center;
+}
+
+.sub-menu-base--list{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+}
+
+.sub-menu-base--item{
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    color: var(--text-color);
+    padding: 5px 10px;
+    position: relative;
+}
+
+.sub-menu-base--item::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 10%;
+    height: 46%;
+    top: 24%;
+    left: 100%;
+    border-left: 2px solid var(--text-color);
+}
+
+.sub-menu-base--item:last-child.sub-menu-base--item::after{
+    display: none;
+} 

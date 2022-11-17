@@ -46,58 +46,6 @@ p{
 @media (max-width:739px){}
 
 
-/* --------------------------------------------- MENU ---------------------------------------------------------- */
-
-.menu5-content__body-header{
-  font-size: 35px;
-  color: var(--text-color);
-  text-align: center;
-  margin: 100px 0px 100px;
-}
-
-/* --------------------------------------------- SALE ---------------------------------------------------------- */
-
-/* --------------------------------------------- BLOG ---------------------------------------------------------- */
-.blog3__content-body{
-  margin-top: 40px;
-  width: 80%;
-  margin: 0 auto;
-}
-
-.blog3__body--list{
-  padding-left: 0;
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-}
-
-.blog3__body--item{
-  width: 200px;
-  text-align: center;
-}
-
-.blog3__body--item--img-box{
-  width: 100%;
-}
-
-.blog3__body--item--img{
-  width: 100%;
-}
-
-.blog3__body--item-label{
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--text-color);
-}
-
-.blog3__banner{
-  margin-top: 40px;
-}
-
-.blog3__banner--img{
-  width: 100%;
-}
-
 iframe{
   width : 700px;
   height : 450px; 

@@ -7,7 +7,7 @@ function BlogContent ({list}){
                 <ul className="base-blog__list">
                     {
                         list.map((item,index)=>(
-                            <li className="base-blog__item">
+                            <li key={index} className="base-blog__item">
                                 <div className="base-blog__item--img-box">
                                     <img src={item.img} alt="" className="base-blog__item--img"/>
                                 </div>

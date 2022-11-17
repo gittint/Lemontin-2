@@ -15,17 +15,17 @@ import axios from 'axios'
 function Sale (){
 
     const [datas,setDatas]  = useState([])
-
+    const fetchAPI = async () => {
+        const getAPI = await axios.get('https://6373003c0bb6b698b6ffe030.mockapi.io/Sales')
+        let res = await getAPI.data;
+        setDatas(res)
+    }
     useEffect(  () => {
-        const fetchAPI = async () => {
-            const getAPI = await axios.get('https://6373003c0bb6b698b6ffe030.mockapi.io/Sales')
-            let res = await getAPI.data;
-            setDatas(res)
-        }
         fetchAPI();
-    },[datas])
+    },[])
 
-    
+    console.log(datas)
+
     return(
         <div className="grid">
 
@@ -35,7 +35,7 @@ function Sale (){
                     <ul className="sale-body__list">
                         {
                             datas.map((sale, index)=>(
-                                <li className="sale-body__item">
+                                <li key={index} className="sale-body__item">
                                     <div className="sale-body__item--img-box">
                                         <img src={sale.img} alt="" className="sale-body__item--img"/>
                                     </div>

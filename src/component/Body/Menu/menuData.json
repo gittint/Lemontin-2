@@ -1,0 +1,408 @@
+[{
+    "menu1" :[
+        {
+            "img" : "https://lemontin.vercel.app/assets/img/menu-1-1.png",
+            "heading" : "Steak Bò Mỹ - 140Gr",
+            "desc": "Steak kiểu Pháp áp chảo ở nhiệt độ thích hợp, bên ngoài xem xém nhưng bên trong vẫn ửng hồng. Đặc biệt, lớp trên steak sử dụng bơ Café de Paris, khi thưởng thức bạn sẽ thấy dậy lên hương thơm vô cùng hấp dẫn.",
+            "price": "149.000 VND",
+            "link" : "#"
+        },
+        {
+            "img" : "https://lemontin.vercel.app/assets/img/menu-1-2.png",
+            "heading" : "Chocolate Browniesr",
+            "desc": "Brownie sử dụng nguyên liệu socola nguyên chất, kết cấu ẩm mịn như bánh bông lan nhưng không quá mềm. Là loại bánh được yêu thích nhất trên thế giới với vị ngọt vừa phải, hơi nhẫn đắng của socola và thơm phức.",
+            "price": "19.000 VND",
+            "link" : "#"
+        },
+        {
+            "img" : "https://lemontin.vercel.app/assets/img/menu-1-3.png",
+            "heading" : "Pate Gan Vịt & Mứt Cà Tím",
+            "desc": "Lấy cảm hứng từ pate gan ngỗng nổi tiếng của người Pháp, pate gan vịt tại Le Monde được tẩm ướp bằng lá thơm, rượu mạnh Pháp, sau đó trải qua nhiều bước chế biến tỉ mỉ, công phu. Món ăn bên ngoài chín, bên trong màu hồng bắt mắt. Thưởng thức cùng với bánh mì và mứt cà tím vô cùng ăn ý.",
+            "price": "49.000 VND",
+            "link" : "#"
+        }
+    ],
+    "menu2" :[
+        {
+            "type" : "Starter",
+            "id" : "starter",
+            "img" : "https://lemontin.vercel.app/assets/img/menu-2-1.png",
+            "menu" :[
+                {
+                    "name" : "Bánh mỳ bơ tỏi",
+                    "desc" : "Garlic Bread",
+                    "price" : "39.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Đĩa khai vị kiểu Pháp",
+                    "desc" : "Duck Liver Parfait with Crostinis and Aubergine Chutney",
+                    "price" : "49.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Gà Viên Chiên",
+                    "desc" : "Chicken Nuggets",
+                    "price" : "69.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Xúc Xích Phomai",
+                    "desc" : "Maelted Cheese Sausages",
+                    "price" : "69.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Thịt Nguội Cuộn Rau Rocket Và Dưa Lưới",
+                    "desc" : "Melon Prosciutto",
+                    "price" : "99.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Đĩa Thịt Nguội Tổng Hợp",
+                    "desc" : "Assorted Cold Cut Platter",
+                    "price" : "179.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Xúc Xích Nướng Kèm Khoai Tây Chiên",
+                    "desc" : "Grilled Sausage",
+                    "price" : "79.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Cá & Khoai Tây Chiên",
+                    "desc" : "Fish & Chips",
+                    "price" : "99.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Khoai Tây Chiên",
+                    "desc" : "French Fried",
+                    "price" : "39.000 VND",
+                    "link" : "#"
+                }
+            ]
+        },
+        {
+            "type": "Soup",
+            "id" : "soup",
+            "img" : "https://lemontin.vercel.app/assets/img/menu-2-2.png",
+            "menu" :[
+                {
+                    "name" : "Súp kem khoai tây",
+                    "desc" : "Creamy Potato Soup With Crispy Bacon",
+                    "price" : "19.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Súp kem nấm",
+                    "desc" : "Creamy Mushroom Soup",
+                    "price" : "19.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Súp kem bí ngô",
+                    "desc" : "Creamy Pumpkin Soup",
+                    "price" : "19.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Súp kem ngô",
+                    "desc" : "Char-Grilled Baby Corn Soup with Cinnamon Flavour",
+                    "price" : "19.000 VND",
+                    "link" : "#"
+                }
+            ]
+        },
+        {
+            "type": "Salad",
+            "id" : "salad",
+            "img" : "https://lemontin.vercel.app/assets/img/menu-2-3.png",
+            "menu" :[
+                {
+                    "name" : "Salad bổ dưỡng",
+                    "desc" : "Baby Skin Salad",
+                    "price" : "89.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Salad Niçoise Truyền Thống Kèm Cá Ngừ",
+                    "desc" : "Classic Niçoise Salad",
+                    "price" : "129.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Salad Lườn Vịt Hun Khói Kèm Rau Rocket",
+                    "desc" : "Smoked Duck & Rocket Salad",
+                    "price" : "129.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Salad Hoa Quả & Đùi Lợn Muối",
+                    "desc" : "Fruit & Parma Ham Salad",
+                    "price" : "129.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Salad Cá Hồi Muối Sốt Chanh Leo",
+                    "desc" : "Smoked Salmon Salad",
+                    "price" : "129.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Salad Rau Tổng Hợp Sốt Chanh Leo",
+                    "desc" : "Green Salad",
+                    "price" : "59.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Salad Hoàng Đế",
+                    "desc" : "Caesar Salad",
+                    "price" : "69.000 VND",
+                    "link" : "#"
+                }
+            ]
+        },
+        {
+            "type": "Steak",
+            "id" : "steak",
+            "img" : "https://lemontin.vercel.app/assets/img/menu-2-4.png",
+            "menu" :[
+                {
+                    "name" : "Thăn Lõi Vai Kèm Gan Ngỗng Pháp",
+                    "desc" : "Foie Gras & Steak",
+                    "price" : "279.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Steak Bò Mỹ - 140Gr",
+                    "desc" : "USA Beef Steak - 140Gr",
+                    "price" : "149.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Sườn Nướng BBQ",
+                    "desc" : "BBQ Pork Rib",
+                    "price" : "299.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Lườn Vịt Xông Khói Sốt Cam Cay",
+                    "desc" : "Pan-Fried Smoked Duck Breast",
+                    "price" : "179.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Cá Hồi Áp Chảo Sốt Cam Cay",
+                    "desc" : "Pan-Seared Salmon with Spicy Orange Sauce",
+                    "price" : "199.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Thăn Lưng Kèm Tôm Áp Chảo",
+                    "desc" : "Steak Oscar",
+                    "price" : "269.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Steak Thăn Lưng Bò 320G Cho 2 Người",
+                    "desc" : "Rib Eye Steak 320G For Couple",
+                    "price" : "399.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Thăn Lưng Với Gan Ngỗng Pháp",
+                    "desc" : "Beef Rossini With Foie Gras",
+                    "price" : "299.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Thăn Lõi Vai Kèm Tôm Áp Chảo",
+                    "desc" : "Surf & Turf",
+                    "price" : "249.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Thăn Lõi Vai Với Sốt Kem Nấm",
+                    "desc" : "Steak Diane",
+                    "price" : "199.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Bò Fuji - 200Gr",
+                    "desc" : "Fuji Beef - 200Gr",
+                    "price" : "299.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Steak Bò Mỹ - 180Gr",
+                    "desc" : "USA Beef Steak - 180Gr",
+                    "price" : "189.000 VND",
+                    "link" : "#"
+                }
+                
+            ]
+        },
+        {
+            "type": "Slow cooked Dishes",
+            "id" : "slowcookeddishes",
+            "img" : "https://lemontin.vercel.app/assets/img/menu-2-5.png",
+            "menu" :[
+                {
+                    "name" : "Bò Hầm Kiểu Pháp",
+                    "desc" : "Beef Bourguignon",
+                    "price" : "129.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Sườn Bò Hầm",
+                    "desc" : "Slow Cook Short Rip",
+                    "price" : "249.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Đùi Cừu Hầm 300gr",
+                    "desc" : "Braised Lamb Shank 300gr",
+                    "price" : "249.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Đùi Cừu Hầm 500gr",
+                    "desc" : "Braised Lamb Shank 500gr",
+                    "price" : "349.000 VND",
+                    "link" : "#"
+                }
+            ]
+        },
+        {
+            "type": "Home-made Pasta",
+            "id" : "home-madepasta",
+            "img" : "https://lemontin.vercel.app/assets/img/menu-2-6.png",
+            "menu" :[
+                {
+                    "name" : "Mỳ Ý Tươi Với Tôm Áp Chảo Sốt Kem",
+                    "desc" : "Prawn & Creamy Sauce",
+                    "price" : "139.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Mỳ Ý tươi xúc xích sốt kem",
+                    "desc" : "Fresh Sausage And Creamy Sauce",
+                    "price" : "139.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Mỳ Ý Tươi Sốt Kem Nấm",
+                    "desc" : "Carbonara Sauce",
+                    "price" : "109.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Mỳ Ý Tươi Sốt Bò Băm",
+                    "desc" : "Bolognese Sauce",
+                    "price" : "109.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Mỳ Ý Tươi Cá Hồi Sốt Kem",
+                    "desc" : "Salmon and Creamy Sauce",
+                    "price" : "139.000 VND",
+                    "link" : "#"
+                }
+            ]
+        },
+        {
+            "type": "Burger",
+            "id" : "burger",
+            "img" : "https://lemontin.vercel.app/assets/img/menu-2-7.png",
+            "menu" :[
+                {
+                    "name" : "Cơm Phomai Sốt Bò Băm",
+                    "desc" : "Cheese Rice with Bolognese Sauce",
+                    "price" : "109.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Burger Bò Không Cay",
+                    "desc" : "Beef Burger ( Mid )",
+                    "price" : "109.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Burger Bò Cay",
+                    "desc" : "Beef Burger ( Hot )",
+                    "price" : "109.000 VND",
+                    "link" : "#"
+                }
+            ]
+        },
+        {
+            "type": "Dessert",
+            "id" : "dessert",
+            "img" : "https://lemontin.vercel.app/assets/img/menu-2-8.png",
+            "menu" :[
+                {
+                    "name" : "Pannacotta",
+                    "desc" : "Coconut Pannacotta",
+                    "price" : "19.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Kem Cháy",
+                    "desc" : "Cremé Brulee",
+                    "price" : "29.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Chocolate Fondant",
+                    "desc" : "Bánh Sô cô la tan chảy",
+                    "price" : "59.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Kem Các Vị",
+                    "desc" : "Ice-Cream",
+                    "price" : "19.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Thuyền Kem 3 Viên",
+                    "desc" : "Three Scoop Ice-cream Boat",
+                    "price" : "49.000 VND",
+                    "link" : "#"
+                }
+            ]
+        }
+    ],
+    "menu4" :[
+        {
+            "img" : "https://lemontin.vercel.app/assets/img/menu-4-1.png",
+            "heading" : "Steak Combo - Beef Steak 140Gr",
+            "desc": "- 01 Súp theo ngày \n- 01 Steak 140Gr \n- 01 Tráng miệng theo ngày",
+            "price": "189.000 VND",
+            "link" : "#"
+        },
+        {
+            "img" : "https://lemontin.vercel.app/assets/img/menu-4-2.png",
+            "heading" : "Steak Combo - Beef Steak 180Gr",
+            "desc": "- 01 Súp theo ngày \n- 01 Steak 180Gr \n- 01 Tráng miệng theo ngày",
+            "price": "219.000 VND",
+            "link" : "#"
+        },
+        {
+            "img" : "https://lemontin.vercel.app/assets/img/menu-4-3.png",
+            "heading" : "Kid's Combo Pasta",
+            "desc": "- 01 Mỳ Ý Sốt Bò Băm hoặc Kem Nấm \n- 01 Xúc Xích Phomai \n- 01 Gà Viên Chiên \n- 01 Khoai Tây Chiên",
+            "price": "139.000 VND",
+            "link" : "#"
+        },
+        {
+            "img" : "https://lemontin.vercel.app/assets/img/menu-4-4.png",
+            "heading" : "Kid's Combo Burger",
+            "desc": "- 01 Burger Bò Cay/Không Cay \n- 01 Xúc Xích Phomai \n- 01 Gà Viên Chiên \n- 01 Khoai Tây Chiên",
+            "price": "139.000 VND",
+            "link" : "#"
+        }
+    ]
+}]

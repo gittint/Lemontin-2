@@ -17,32 +17,32 @@ function BlogMenu (){
                 <div className="menu-base">
                     <ul className="menu-base--list">
 
-                        <li className="menu-base--item">
-                            <Link to="/blog-1" className="menu-base--link">
+                        <Link to="/blog-1" className="menu-base--item">
+                            <div className="menu-base--link">
                                 <div className="menu-base--icon-box">
                                     <i className="menu-base--icon fa-solid fa-carrot"></i>
                                 </div>
                                 <div className="menu-base--label">Nguyên liệu nhà làm</div>
-                            </Link>
-                        </li>
+                            </div>
+                        </Link>
                         
-                        <li className="menu-base--item">
-                            <Link to="/blog-2" className="menu-base--link">
+                        <Link to="/blog-2" className="menu-base--item">
+                            <div className="menu-base--link">
                                 <div className="menu-base--icon-box">
                                     <i className="menu-base--icon fa-solid fa-kitchen-set"></i>
                                 </div>
                                 <div className="menu-base--label">Phong cách ẩm thực</div>
-                            </Link>
-                        </li>
+                            </div>
+                        </Link>
 
-                        <li className="menu-base--item">
-                            <Link to="/blog-3" className="menu-base--link">
+                        <Link to="/blog-3" className="menu-base--item">
+                            <div className="menu-base--link">
                                 <div className="menu-base--icon-box">
                                     <i className="menu-base--icon fa-brands fa-docker"></i>
                                 </div>
                                 <div className="menu-base--label">Trải nghiệm nhà hàng</div>
-                            </Link>
-                        </li>
+                            </div>
+                        </Link>
                     </ul>
                 </div>
             </div>
