@@ -404,5 +404,297 @@
             "price": "139.000 VND",
             "link" : "#"
         }
+    ],
+    "menu3" :[
+        {
+            "type": "Juice",
+            "id" : "juice",
+            "img" : "https://lemontin.vercel.app/assets/img/menu-3-1.png",
+            "menu" :[
+                {
+                    "name" : "Nước Chanh Quất Nha Đam",
+                    "desc" : "Kumquat Lemon Juice Aloe Vera",
+                    "price" : "55.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Nước Ép Dưa Hấu",
+                    "desc" : "Water Melon Juice",
+                    "price" : "45.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Nước Ép Dứa",
+                    "desc" : "Pineapple Juice",
+                    "price" : "49.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Nước Chanh Leo Nha Đam",
+                    "desc" : "Passionfruit Juice",
+                    "price" : "55.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Nước Ép Cà Rốt",
+                    "desc" : "Carrot Juice",
+                    "price" : "49.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Burger Bò Cay",
+                    "desc" : "Beef Burger ( Hot )",
+                    "price" : "109.000 VND",
+                    "link" : "#"
+                }
+            ]
+        },
+        {
+            "type": "Sparkling",
+            "id" : "sparkling",
+            "img" : "https://lemontin.vercel.app/assets/img/menu-3-2.png",
+            "menu" :[
+                {
+                    "name" : "Mojito Blue Curacao",
+                    "desc" : "Mojito Blue Curacao",
+                    "price" : "59.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Passion Sparkling",
+                    "desc" : "Passion Sparkling",
+                    "price" : "59.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Le Jardin Mocktail",
+                    "desc" : "Le Jardin Mocktail",
+                    "price" : "69.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "De Solei Mocktail",
+                    "desc" : "De Solei Mocktail",
+                    "price" : "69.000 VND",
+                    "link" : "#"
+                }
+            ]
+        },
+        {
+            "type": "Detox",
+            "id" : "detox",
+            "img" : "https://lemontin.vercel.app/assets/img/menu-3-3.png",
+            "menu" :[
+                {
+                    "name" : "Dứa và Cà Rốt",
+                    "desc" : "Pineapple & Carrot",
+                    "price" : "69.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Dứa và Dưa Chuột",
+                    "desc" : "Pineapple and Cucumber",
+                    "price" : "69.000 VND",
+                    "link" : "#"
+                }
+            ]
+        },
+        {
+            "type": "Tea",
+            "id" : "tea",
+            "img" : "https://lemontin.vercel.app/assets/img/menu-3-4.png",
+            "menu" :[
+                {
+                    "name" : "Trà Nhài Quất Nha Đam",
+                    "desc" : "Kumquat Lemon Tea Aloe Vera",
+                    "price" : "55.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Trà Bưởi Hồng",
+                    "desc" : "Grape Fruit Tea",
+                    "price" : "55.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Trà Đào Chanh Leo",
+                    "desc" : "Passionfruit Peach Tea",
+                    "price" : "45.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Trà Đào Sả",
+                    "desc" : "Peach Lemongrass Tea",
+                    "price" : "45.000 VND",
+                    "link" : "#"
+                }
+            ]
+        },
+        {
+            "type": "Soft Drinks",
+            "id" : "softdrinks",
+            "img" : "https://lemontin.vercel.app/assets/img/menu-3-5.png",
+            "menu" :[
+                {
+                    "name" : "Aquafina",
+                    "desc" : "Aquafina",
+                    "price" : "25.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Pepsi",
+                    "desc" : "Pepsi",
+                    "price" : "25.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Pepsi Black",
+                    "desc" : "Pepsi Black",
+                    "price" : "25.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "7UPi",
+                    "desc" : "7UPi",
+                    "price" : "25.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Aquafina Soda",
+                    "desc" : "Aquafina Soda",
+                    "price" : "25.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Mirinda",
+                    "desc" : "Mirinda",
+                    "price" : "25.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Twister",
+                    "desc" : "Twister",
+                    "price" : "25.000 VND",
+                    "link" : "#"
+                }
+            ]
+        },
+        {
+            "type": "Beer",
+            "id" : "beer",
+            "img" : "https://lemontin.vercel.app/assets/img/menu-2-7.png",
+            "menu" :[
+                {
+                    "name" : "Bia Hà Nội",
+                    "desc" : "Hà Nội Beer",
+                    "price" : "35.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Bia Sài Gòn",
+                    "desc" : "Sài Gòn Beer",
+                    "price" : "35.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Bia Heineken",
+                    "desc" : "Heineken Beer",
+                    "price" : "40.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Bia Trúc Bạch",
+                    "desc" : "Truc Bach Beer",
+                    "price" : "40.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Bia Tiger",
+                    "desc" : "Tiger Beer",
+                    "price" : "35.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Bia Heineken Silver",
+                    "desc" : "Heineken Silver Beer",
+                    "price" : "40.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Bia Tiger Crystal",
+                    "desc" : "Tiger Crystal Beer",
+                    "price" : "35.000 VND",
+                    "link" : "#"
+                }
+            ]
+        },
+        {
+            "type": "Wine",
+            "id" : "wine",
+            "img" : "https://lemontin.vercel.app/assets/img/menu-3-7.png",
+            "menu" :[
+                {
+                    "name" : "Five's Reserve (Ly)",
+                    "desc" : "Cabernet Sauvignon - South Africa",
+                    "price" : "79.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Cono Sur Toconaral Cab ( Chai )",
+                    "desc" : "Cabernet Sauvignon - Chile",
+                    "price" : "450.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Entrecôte Blend ( Chai )",
+                    "desc" : "Merlot Cabernet Syrah - France",
+                    "price" : "650.000 VND",
+                    "link" : "#"
+                }
+            ]
+        },
+        {
+            "type": "Sangria",
+            "id" : "sangria",
+            "img" : "https://lemontin.vercel.app/assets/img/menu-3-8.png",
+            "menu" :[
+                {
+                    "name" : "Sangria Hoa Hồng (Ly)",
+                    "desc" : "Glass",
+                    "price" : "69.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Sangria Cam Quế (Ly)",
+                    "desc" : "Glass",
+                    "price" : "69.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Sangria Cam Quế ( Vừa )",
+                    "desc" : "Medium Size",
+                    "price" : "119.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Sangria Hoa Hồng ( Vừa )",
+                    "desc" : "Medium Size",
+                    "price" : "119.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Sangria Cam Quế ( Lớn )",
+                    "desc" : "Large Size",
+                    "price" : "219.000 VND",
+                    "link" : "#"
+                },
+                {
+                    "name" : "Sangria Hoa Hồng ( Lớn )",
+                    "desc" : "Large Size",
+                    "price" : "219.000 VND",
+                    "link" : "#"
+                }
+            ]
+        }
     ]
 }]
